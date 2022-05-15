@@ -190,7 +190,7 @@ def main():
             text_newALL = prepCloud(text, Topic)
             wordcloud = WordCloud(
                 stopwords=stopwords, max_words=800, max_font_size=70, background_color='white').generate(text_newALL)
-            st.write(plt.imshow(wordcloud, interpolation='bilinear'), plt.axis('off'))
+            st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
 
         # Wordcloud for Positive tweets only
@@ -204,7 +204,7 @@ def main():
             #text_positive=" ".join([word for word in text_positive.split() if word not in stopwords])
             wordcloud = WordCloud(
                 stopwords=stopwords, max_words=800, max_font_size=70, background_color='white').generate(text_new_positive)
-            st.write(plt.imshow(wordcloud, interpolation='bilinear'), plt.axis('off'))
+            st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
 
         # Wordcloud for Negative tweets only
@@ -218,7 +218,7 @@ def main():
             #text_negative=" ".join([word for word in text_negative.split() if word not in stopwords])
             wordcloud = WordCloud(
                 stopwords=stopwords, max_words=800, max_font_size=70, background_color='white').generate(text_new_negative)
-            st.write(plt.imshow(wordcloud, interpolation='bilinear'), plt.axis('off'))
+            st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
 
     st.sidebar.header("About App")
