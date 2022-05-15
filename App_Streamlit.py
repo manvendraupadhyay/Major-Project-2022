@@ -36,11 +36,11 @@ img {
 
 def main():
     """ Common ML Dataset Explorer """
-    #st.title("Live twitter Sentiment analysis")
+    #st.title("Sentiment Analysis: Twitter")
     #st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
 
     html_temp = """
-	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live twitter Sentiment analysis</p></div>
+	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Sentiment Analysis: Twitter</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
     st.subheader(
@@ -222,15 +222,13 @@ def main():
             st.pyplot()
 
     st.sidebar.header("About App")
-    st.sidebar.info("A Twitter Sentiment analysis Project which will scrap twitter for the topic selected by the user. The extracted tweets will then be used to determine the Sentiments of those tweets. \
+    st.sidebar.info("A Twitter Sentiment Analysis Project which will scrap twitter for the topic selected by the user. The extracted tweets will then be used to determine the Sentiments of those tweets. \
                     The different Visualizations will help us get a feel of the overall mood of the people on Twitter regarding the topic we select.")
-    st.sidebar.text("Built with patience.")
+    st.sidebar.subheader("Built with patience.")
 
     st.sidebar.header("Team Members")
-    st.sidebar.info("Kuldeep Tiwari")
-    st.sidebar.text("Responsibilities: Frontend")
-    st.sidebar.info("Manvendra Upadhyay")
-    st.sidebar.text("Responsibilities: Backend")
+    st.sidebar.info("Kuldeep Tiwari [1800110031]")
+    st.sidebar.info("Manvendra Upadhyay [1800110034]")
     #st.sidebar.subheader("Scatter-plot setup")
     #box1 = st.sidebar.selectbox(label= "X axis", options = numeric_columns)
     #box2 = st.sidebar.selectbox(label="Y axis", options=numeric_columns)
