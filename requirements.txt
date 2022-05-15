@@ -48,6 +48,7 @@ nest-asyncio==1.4.0
 notebook==6.1.4
 numpy==1.18.1
 oauthlib==3.1.0
+openpyxl==3.0.9
 packaging==20.4
 pandas==0.25.3
 pandocfilters==1.4.2
@@ -83,7 +84,7 @@ statsmodels==0.11.1
 streamlit==0.67.1
 tweepy==3.9.0
 textblob==0.15.3
-typed-ast==1.4.0
+typed-ast=.4.0
 tzlocal==2.1
 urllib3==1.25.10
 validators==0.18.1
