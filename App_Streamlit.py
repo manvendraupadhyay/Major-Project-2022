@@ -189,7 +189,7 @@ def main():
             stopwords = set(STOPWORDS)
             text_newALL = prepCloud(text, Topic)
             wordcloud = WordCloud(
-                stopwords=stopwords, max_words=800, max_font_size=70).generate(text_newALL)
+                stopwords=stopwords, max_words=800, max_font_size=70, background_color='white').generate(text_newALL)
             st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
 
@@ -203,7 +203,7 @@ def main():
             text_new_positive = prepCloud(text_positive, Topic)
             #text_positive=" ".join([word for word in text_positive.split() if word not in stopwords])
             wordcloud = WordCloud(
-                stopwords=stopwords, max_words=800, max_font_size=70).generate(text_new_positive)
+                stopwords=stopwords, max_words=800, max_font_size=70, background_color='white').generate(text_new_positive)
             st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
 
@@ -217,7 +217,7 @@ def main():
             text_new_negative = prepCloud(text_negative, Topic)
             #text_negative=" ".join([word for word in text_negative.split() if word not in stopwords])
             wordcloud = WordCloud(
-                stopwords=stopwords, max_words=800, max_font_size=70).generate(text_new_negative)
+                stopwords=stopwords, max_words=800, max_font_size=70, background_color='white').generate(text_new_negative)
             st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
 
